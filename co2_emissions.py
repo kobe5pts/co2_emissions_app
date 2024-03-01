@@ -10,7 +10,15 @@ def index():
 
 @app.route('/co2_emissions', methods=['GET'])
 def search_co2_emissions_page():
-    return render_template('search_co2_emissions.html')    
+    return render_template('search_co2_emissions.html') 
+
+@app.route('/entity_not_found')
+def entity_not_found():
+    return render_template('entity_not_found.html')
+
+@app.route('/year_not_provided')
+def year_not_provided():
+    return render_template('year_not_provided.html')           
 
 @app.route('/search_results_co2_emissions', methods=['POST'])
 def search_co2_emissions():
