@@ -1,3 +1,4 @@
+* 44af5e8 : Added new features
 * 96cf083 : Added new features
 * f5295e5 : first commit
 * e050473 : first commit

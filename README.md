@@ -76,20 +76,20 @@ Testing is a critical aspect of ensuring the reliability, functionality, and per
 
 *Unit Testing: We utilize unit tests to validate the functionality of individual components, such as functions, methods, and classes, in isolation from the rest of the application. These tests focus on specific units of code and help ensure that each component behaves as expected. We use the unittest framework, which is part of Python's standard library, to write and run our unit tests.
 
-*Integration Testing: Integration tests are used to verify that different parts of the application work together correctly. These tests validate the interactions between various modules, components, and services within the application. By testing integration points, we can identify and address issues related to data flow, communication between components, and overall system behavior.
-
-*End-to-End Testing: End-to-end (E2E) tests simulate real user scenarios by testing the application as a whole, from the user interface to the database. These tests verify that the entire application functions correctly from start to finish, including user interactions, data processing, and database operations. We use tools like Selenium or Cypress for E2E testing, depending on the nature of the application.
-
-*Test Automation: To streamline the testing process and ensure consistency, we automate our tests as much as possible. Continuous Integration (CI) pipelines are set up to automatically run our tests whenever changes are made to the codebase. This helps catch issues early and ensures that new features or bug fixes don't inadvertently introduce regressions.
-
-*Mocking and Stubbing: In some cases, we use mocking and stubbing techniques to isolate components and simulate dependencies or external services. Mock objects mimic the behavior of real objects, allowing us to test components in isolation without relying on external resources. This helps improve test speed, reduce complexity, and facilitate more thorough testing.
-
-*Code Coverage: We aim for high code coverage in our tests to ensure that most, if not all, of our code is exercised by tests. Code coverage metrics provide visibility into which parts of the codebase are covered by tests and help identify areas that may require additional testing. We strive to maintain a healthy balance between code coverage and test effectiveness.
-
-*Regression Testing: Whenever changes are made to the codebase, we perform regression testing to ensure that existing functionality is not inadvertently broken. This involves re-running relevant tests to verify that no regressions have occurred and that the application behaves as expected after the changes.
-
-By following these testing practices, we can maintain a high level of confidence in the quality and reliability of our Flask application. We continuously iterate on our testing approach to identify areas for improvement and ensure that our testing efforts remain effective and efficient.
-
+## unittest procedure:
+To perform the test, run the test.py file as follows:
+*In the terminal, navigate to the project directory - cd CO2_emissions
+*run the following commands;
+    pyenv install 3.7.9
+    pyenv local 3.7.9
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install --upgrade pip
+    pip install flask
+    export FLASK_APP=co2_emissions.py
+    export FLASK_ENV=development
+*finally, run python3 test.py
+    
 ## CONTRIBUTION
 Contributions are welcome! 
 Feel free to open issues or pull requests for any improvements
