@@ -46,7 +46,7 @@ A smaller subset (data from year 2000 to 2014) of the original datasets was take
 8. Navigate back to the home page or perform a new search.
 
 ## Render deploymentURL:  
-https://co2-emissions-app-m99m.onrender.com
+https://global-co2-emissions-app.onrender.com
 
 ## App maintenance:
 
