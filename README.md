@@ -37,7 +37,7 @@ A smaller subset (data from year 2000 to 2014) of the original datasets was take
     export FLASK_ENV=development
     python3 -m flask run -h 0.0.0.0
 
-5. Access the application in a web browser by navigating to https://amigoamazon-virtualeffect-5000.codio-box.uk/ 
+5. Access the application in a web browser by navigating to https://carrotalex-denmarkmicro-5000.codio-box.uk/
 
 6. Enter a country and a year to search for CO2 emissions data.
 
