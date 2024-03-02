@@ -1,7 +1,7 @@
 # CO2 Emissions Search Application
 
 The CO2 Emissions Search Application is a web-based tool that allows users to search 
-for CO2 emissions data by country and year. This application is developed using Python 
+for CO2 emissions data by country and year. This application was developed using Python 
 with the Flask framework for the backend and SQLite for the database.
 The datasets were obtained from open source https://zenodo.org/records/10562476 and 
 https://www.kaggle.com/datasets/yoannboyere/co2-ghg-emissionsdata?select=co2_emission.csv
@@ -37,7 +37,7 @@ A smaller subset (data from year 2000 to 2014) of the original datasets was take
     export FLASK_ENV=development
     python3 -m flask run -h 0.0.0.0
 
-5. Access the application in a web browser by navigating to https://carrotalex-denmarkmicro-5000.codio-box.uk/
+5. Access the application in a web browser by navigating to https://amigoamazon-virtualeffect-5000.codio-box.uk/ 
 
 6. Enter a country and a year to search for CO2 emissions data.
 
@@ -72,9 +72,9 @@ By following these maintenance practices, you can ensure that the Flask applicat
 
 ## App testing:
 
-Testing is a critical aspect of ensuring the reliability, functionality, and performance of our Flask application. Here's how we approach testing:
+Testing is a critical aspect of ensuring the reliability, functionality, and performance of the Flask application. Here's how the testing is approached:
 
-*Unit Testing: We utilize unit tests to validate the functionality of individual components, such as functions, methods, and classes, in isolation from the rest of the application. These tests focus on specific units of code and help ensure that each component behaves as expected. We use the unittest framework, which is part of Python's standard library, to write and run our unit tests.
+*Unit Testing: Unit tests was utilize to validate the functionality of individual components, such as functions, methods, and classes, in isolation from the rest of the application. These tests focus on specific units of code and help ensure that each component behaves as expected. We use the unittest framework, which is part of Python's standard library, to write and run our unit tests.
 
 ## unittest procedure:
 To perform the test, run the test.py file as follows:
