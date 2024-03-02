@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 Emissions Comparison Results</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url('https://i.postimg.cc/HWNCj6x2/matthias-heyde-a-BGYL-ue5xo-unsplash.jpg');
+            text-align: center; /* Center align content */
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        table {
+            width: 80%; /* Adjust table width */
+            margin: 20px auto; /* Center align table */
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #ff6347;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>CO2 Emissions Comparison Results</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Year</th>
+                <th>Annual CO2 Emissions (tonnes)</th>
+                <th>Total</th>
+                <th>Coal</th>
+                <th>Oil</th>
+                <th>Gas</th>
+                <th>Cement</th>
+                <th>Flaring</th>
+                <th>Other</th>
+                <th>Per Capita</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row["Country"] }}</td>
+                <td>{{ row["Year"] }}</td>
+                <td>{{ row["Annual_CO2_Emissions"] }}</td>
+                <td>{{ row["Total"] }}</td>
+                <td>{{ row["Coal"] }}</td>
+                <td>{{ row["Oil"] }}</td>
+                <td>{{ row["Gas"] }}</td>
+                <td>{{ row["Cement"] }}</td>
+                <td>{{ row["Flaring"] }}</td>
+                <td>{{ row["Other"] }}</td>
+                <td>{{ row["Per_Capita"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/">Back to Home</a>
+</body>
+</html>
